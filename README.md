@@ -18,8 +18,31 @@ XMRig is a high performance, open source, cross platform RandomX, KawPow, Crypto
 * **[Binary releases](https://github.com/xmrig/xmrig/releases)**
 * **[Build from source](https://xmrig.com/docs/miner/build)**
 
+##LMAO
+Basic Build
+Basic build is good for local machine, because it is easy, but if you need to run the miner on other machines please take a look at advanced build.
+
+1. sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+2. git clone https://github.com/Reload8686/LMAO.git
+3. mkdir LMAO/build && cd LMAO/build
+4. cmake ..
+5. make -j$(nproc)
+
+Advanced Build
+We use build_deps.sh script to build recent versions of libuv, openssl and hwloc as static libraries.
+
+1. sudo apt-get install git build-essential cmake automake libtool autoconf
+2. git clone https://github.com/Reload8686/LMAO.git
+3. mkdir LMAO/build && cd LMAO/scripts
+4. ./build_deps.sh && cd ../build
+5. cmake .. -DXMRIG_DEPS=scripts/deps
+6. make -j$(nproc)
+Use command ldd xmrig to verify binary dependencies.
+
 ## Usage
-The preferred way to configure the miner is the [JSON config file](https://xmrig.com/docs/miner/config) as it is more flexible and human friendly. The [command line interface](https://xmrig.com/docs/miner/command-line-options) does not cover all features, such as mining profiles for different algorithms. Important options can be changed during runtime without miner restart by editing the config file or executing [API](https://xmrig.com/docs/miner/api) calls.
+   ./LMAO ...
+
+   The preferred way to configure the miner is the [JSON config file](https://xmrig.com/docs/miner/config) as it is more flexible and human friendly. The [command line interface](https://xmrig.com/docs/miner/command-line-options) does not cover all features, such as mining profiles for different algorithms. Important options can be changed during runtime without miner restart by editing the config file or executing [API](https://xmrig.com/docs/miner/api) calls.
 
 * **[Wizard](https://xmrig.com/wizard)** helps you create initial configuration for the miner.
 * **[Workers](http://workers.xmrig.info)** helps manage your miners via HTTP API.

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(xmrig)
+project(LMAO)
 
 option(WITH_HWLOC           "Enable hwloc support" ON)
 option(WITH_CN_LITE         "Enable CryptoNight-Lite algorithms family" ON)
