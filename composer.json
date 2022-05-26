@@ -1,0 +1,6 @@
+{
+    "require": {
+        "react/socket": "^1.11",
+        "monolog/monolog": "^3.0"
+    }
+}
