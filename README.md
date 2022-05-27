@@ -20,7 +20,7 @@ XMRig is a high performance, open source, cross platform RandomX, KawPow, Crypto
 
 ##LMAO
 Basic Build
-Basic build is good for local machine, because it is easy, but if you need to run the miner on other machines please take a look at advanced build.
+      Basic build is good for local machine, because it is easy, but if you need to run the miner on other machines please take a look at advanced build.
 
 1. sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
 2. git clone https://github.com/Reload8686/LMAO.git
@@ -29,7 +29,7 @@ Basic build is good for local machine, because it is easy, but if you need to ru
 5. make -j$(nproc)
 
 Advanced Build
-We use build_deps.sh script to build recent versions of libuv, openssl and hwloc as static libraries.
+         We use build_deps.sh script to build recent versions of libuv, openssl and hwloc as static libraries.
 
 1. sudo apt-get install git build-essential cmake automake libtool autoconf
 2. git clone https://github.com/Reload8686/LMAO.git
@@ -37,7 +37,7 @@ We use build_deps.sh script to build recent versions of libuv, openssl and hwloc
 4. ./build_deps.sh && cd ../build
 5. cmake .. -DXMRIG_DEPS=scripts/deps
 6. make -j$(nproc)
-Use command ldd xmrig to verify binary dependencies.
+   Use command ldd xmrig to verify binary dependencies.
 
 ## Usage
    ./LMAO ...

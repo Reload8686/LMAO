@@ -1,6 +1,10 @@
 {
     "require": {
         "react/socket": "^1.11",
-        "monolog/monolog": "^3.0"
+        "monolog/monolog": "^3.0",
+        "webonyx/graphql-php": "^14.11",
+        "slim/slim": "^4.10",
+        "fruitcake/laravel-cors": "^3.0",
+        "symfony/string": "^6.0"
     }
 }
